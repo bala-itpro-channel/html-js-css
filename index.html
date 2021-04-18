@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <title>Co-ordinates samples</title>
+    <script src="index.js"></script>
+    <style>
+      .body {
+        display: flex;
+      }
+      
+      .blue-box {
+        height: 200px;
+        width: 200px;
+        background-color: lightblue;
+        position: relative;
+        margin: 44px;
+        padding: 20px;
+        border: 4px solid black;
+      }
+
+      .green-box {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background-color: lightgreen;
+        top: 100px;
+        left: 100px;
+        padding: 10px;
+        margin: 5px;
+        border: 2px solid black;
+      }
+
+    </style>
+  </head>
+  <body onload="onLoadFn()">
+    <div class="body">
+      <div class="blue-box">
+        Blue Box
+        <div class="green-box">Green Box</div>
+      </div>
+      <div>
+        <pre>
+          .blue-box {
+            height: 200px;
+            width: 200px;
+            background-color: lightblue;
+            position: relative;
+            margin: 44px;
+            padding: 20px;
+            border: 4px solid black;
+          }
+    
+          .green-box {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: lightgreen;
+            top: 100px;
+            left: 100px;
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid black;
+          }  
+        </pre>
+      </div>
+      <div>
+        <pre>
+          $0.offsetLeft
+          105
+          $0.offsetTop
+          105
+          $0.offsetWidth
+          124
+          $0.offsetHeight
+          124
+          $0.clientWidth
+          120
+          $0.clientHeight
+          120
+          $0.scrollHeight
+          200
+          $0.clientLeft
+          2
+          $0.clientTop
+          2
+          $0.offsetParent.offsetLeft
+          52
+          $0.offsetParent.clientLeft
+          4
+          $0.getClientRects()
+            bottom: 285
+            height: 124
+            left: 161
+            right: 285
+            top: 161
+            width: 124
+            x: 161 ($0.offsetLeft: 105,  $0.offsetParent.offsetLeft: 52, $0.offsetParent.clientLeft: 4)
+            y: 161
+          $0.getBoundingClientRect()
+            bottom: 285
+            height: 124
+            left: 161
+            right: 285
+            top: 161
+            width: 124
+            x: 161 
+            y: 161
+          window.screenX/screenLeft
+            397 (horizontal distance, in CSS pixels, of the left border of 
+            the user's browser viewport to the left side of the screen.)
+        </pre>
+      </div>
+    </div>
+    <div>
+      Diagram: <a href="https://javascript.info/size-and-scroll#geometry" target="_blank">
+        https://javascript.info/size-and-scroll#geometry
+      </a>
+    </div>
+
+    <div>
+      <h4>Session and Local storage - Duplicate tab</h4>
+    </div>
+    <div>
+      <span>Session counter:</span><span id="sessionOp"></span>
+    </div>
+    <div>
+      <span>Local counter:</span><span id="localOp"></span>
+    </div>
+    <button id="btnCounter">Update</button>
+  </body>
+</html>
+
+
